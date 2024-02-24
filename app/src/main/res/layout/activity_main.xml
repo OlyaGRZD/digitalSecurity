@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blueBg"
+    >
+
+
+    <TextView
+        android:id="@+id/TitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Мои курсы"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chaptOneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Знакомство с мобильным устройством"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleTv" />
+
+    <Button
+        android:id="@+id/testOneBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Проверка знаний"
+        app:layout_constraintEnd_toEndOf="@+id/chaptOneBtn"
+        app:layout_constraintStart_toStartOf="@+id/chaptOneBtn"
+        app:layout_constraintTop_toBottomOf="@+id/chaptOneBtn"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blueBg"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/chaptTwoBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Как действуют мошенники, способы защиты"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/testOneBtn"
+        app:layout_constraintStart_toStartOf="@+id/testOneBtn"
+        app:layout_constraintTop_toBottomOf="@+id/testOneBtn" />
+
+    <Button
+        android:id="@+id/testTwoBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Проверка знаний"
+        android:textColor="@color/blueBg"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/chaptTwoBtn"
+        app:layout_constraintStart_toStartOf="@+id/chaptTwoBtn"
+        app:layout_constraintTop_toBottomOf="@+id/chaptTwoBtn" />
+
+    <Button
+        android:id="@+id/chaptThreeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Полезные мобильные приложения"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/testTwoBtn"
+        app:layout_constraintStart_toStartOf="@+id/testTwoBtn"
+        app:layout_constraintTop_toBottomOf="@+id/testTwoBtn" />
+
+    <Button
+        android:id="@+id/testThreeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Проверка знаний"
+        android:textColor="@color/blueBg"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/chaptThreeBtn"
+        app:layout_constraintStart_toStartOf="@+id/chaptThreeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/chaptThreeBtn" />
+
+    <Button
+        android:id="@+id/chaptFourBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Социальные сети"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/testThreeBtn"
+        app:layout_constraintStart_toStartOf="@+id/testThreeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/testThreeBtn" />
+
+    <Button
+        android:id="@+id/testFourBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Проверка знаний"
+        android:textColor="@color/blueBg"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/chaptFourBtn"
+        app:layout_constraintStart_toStartOf="@+id/chaptFourBtn"
+        app:layout_constraintTop_toBottomOf="@+id/chaptFourBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

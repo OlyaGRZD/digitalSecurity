@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tests.TestTwoActivity"
+    android:background="@color/blueBg">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вопрос"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <RadioGroup
+        android:id="@+id/answersRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        >
+
+        <!-- Варианты ответов будут добавлены программно -->
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        android:backgroundTint="@color/darkBlue"
+        android:layout_below="@id/answersRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начать заново"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:layout_below="@id/resultTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продолжить обучение"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:layout_below="@id/restartButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

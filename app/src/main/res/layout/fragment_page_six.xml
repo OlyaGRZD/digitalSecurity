@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".lessonOneFragments.PageSixFragment"
+    android:background="@color/blueBg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/singsAboveTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/singsAbove"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="5sp"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:fontFamily="@font/roboto_bold"/>
+
+        <ImageView
+            android:id="@+id/singsAboveImage"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:src="@drawable/ic_sings_above"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginTop="10sp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exampleSignsAbove"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:fontFamily="@font/roboto_medium"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="12sp"
+            android:layout_marginTop="15sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/alarmImage"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_alarm"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"/>
+
+                <TextView
+                    android:id="@+id/alarmTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginVertical="5sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/alarm"
+                    android:textColor="@color/blueBg"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="12sp"
+            android:layout_marginTop="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/soundOffImage"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:src="@drawable/ic_sound_off" />
+
+                <TextView
+                    android:id="@+id/soundOffTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/soundOff"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginVertical="5sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/blueBg"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="12sp"
+            android:layout_marginTop="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/wifiImage"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:src="@drawable/ic_wifi" />
+
+                <TextView
+                    android:id="@+id/wifiTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifi"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginVertical="5sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/blueBg"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="12sp"
+            android:layout_marginTop="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:src="@drawable/ic_battery" />
+
+                <TextView
+                    android:id="@+id/batteryTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/battery"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginVertical="5sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/blueBg"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="12sp"
+            android:layout_marginTop="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/netImage"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_net"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"/>
+
+                <TextView
+                    android:id="@+id/netTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/net"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginVertical="5sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/blueBg"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

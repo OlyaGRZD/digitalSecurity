@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".lessonTwoFragments.PageThreeSecondFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/vishingTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blueBg"
+            android:textSize="21sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textAlignment="center"
+            android:text="@string/vishing" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12sp"
+            android:backgroundTint="@color/blueBg"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp">
+
+            <TextView
+                android:id="@+id/vishingTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="19sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginVertical="10sp"
+                android:text="@string/howToVishing" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/wharIsVishingTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blueBg"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="19sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="15sp"
+            android:text="@string/howToVishTwo" />
+
+        <ImageView
+            android:id="@+id/wishingImage"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:src="@drawable/ic_wishing" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15sp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="15sp"
+            android:backgroundTint="@color/lightRed">
+
+            <TextView
+                android:id="@+id/dontVishTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginVertical="10sp"
+                android:layout_marginHorizontal="5sp"
+                android:text="@string/vishingAlert" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

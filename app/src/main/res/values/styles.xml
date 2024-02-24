@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Widget.Theme.DigitalSecurity.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/blueBg</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+</resources>
